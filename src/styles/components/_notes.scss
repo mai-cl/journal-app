@@ -1,0 +1,92 @@
+.notes__main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.notes__appbar {
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  & .buttons-wrapper {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  & .open-sidebar {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.notes__appbar-date {
+  font-size: 1.2rem;
+}
+
+.notes__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+
+  @media only screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+}
+
+.notes__footer {
+  padding: 2rem;
+
+  @media only screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+}
+
+.notes__title-input,
+.notes__textarea {
+  border: none;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.notes__title-input {
+  color: $dark-grey;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.8rem;
+  }
+}
+
+.notes__textarea {
+  border: none;
+  color: $dark-grey;
+  font-size: 2rem;
+  flex: 1 1 auto;
+  resize: none;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.6rem;
+  }
+}
+
+.notes__image img {
+  box-shadow: 5px 5px $dark-grey;
+  height: 15rem;
+}
