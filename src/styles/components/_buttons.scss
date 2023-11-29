@@ -72,10 +72,10 @@
   }
   .google-icon {
     position: absolute;
-    margin-top: 11px;
-    margin-left: 11px;
-    width: 18px;
-    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 26px;
   }
   .btn-text {
     float: right;

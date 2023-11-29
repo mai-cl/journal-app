@@ -62,7 +62,7 @@ export const LoginScreen = () => {
             <div className='google-icon-wrapper'>
               <img
                 className='google-icon'
-                src='https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
+                src='https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png'
                 alt='google button'
               />
             </div>
